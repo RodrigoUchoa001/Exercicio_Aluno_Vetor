@@ -8,9 +8,9 @@ public class Vetor {
 		cont=0;
 	}
 	
-	public boolean adiciona(Aluno aluno) {
+	public boolean adiciona(Aluno alu) {
 		if (cont<10) {
-			this.aluno[cont]=aluno;
+			aluno[cont]=alu;
 			cont++;
 			return true;
 		}
@@ -41,4 +41,13 @@ public class Vetor {
 			System.out.println(aluno[i]);
 		}
 	}
+	
+	public Aluno getAlunoP(int posicao) {
+		if (busca(posicao)) {
+			return aluno[posicao];
+		}
+		return null;
+	}
+
+
 }
