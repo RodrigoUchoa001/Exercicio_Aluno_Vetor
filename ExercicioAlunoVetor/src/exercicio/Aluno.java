@@ -4,6 +4,11 @@ public class Aluno {
 	private String nome;
 	private double nota;
 	
+	public Aluno(String nome2, double nota2) {
+		setNome(nome2);
+		setNota(nota2);
+	}
+	
 	public String getNome() {
 		return nome;
 	}
@@ -16,6 +21,5 @@ public class Aluno {
 	public void setNota(double nota) {
 		this.nota = nota;
 	}
-	
 
 }
