@@ -24,16 +24,16 @@ public class Vetor {
 		return false;
 	}
 	
-	public boolean remove(int posicao) {
+	public String remove(int posicao) {
 		if (posicao>=0&&posicao<cont) {
 			for (int i=posicao;i<cont-1;i++) {
 				aluno[i]=aluno[i+1];
 			}
 			aluno[cont]=null;
 			cont--;
-			return true;
+			return "Posição deletada com sucesso!";
 		}
-		return false;
+		return "Posição inválida";
 	}
 	
 	public void getLista() {
@@ -47,6 +47,7 @@ public class Vetor {
 			return aluno[posicao];
 		}
 		return null;
+		
 	}
 
 }
